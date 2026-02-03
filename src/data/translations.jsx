@@ -4,8 +4,8 @@ const translations = {
     es: {
         nav: { services: 'Servicios', products: 'Productos', portfolio: 'Portafolio', about: 'Sobre Mí', contact: 'Contacto' },
         hero: {
-            title: <>Diseño con <br /><span className="text-accent">alma y propósito</span></>,
-            desc: <>Estudio de diseño gráfico en La Paz, Bolivia. Ayudo a <strong>emprendedores y marcas</strong> a construir identidades visuales auténticas que conectan de verdad con su audiencia.</>,
+            title: <div className="hero-title-logo"><span className="text-tittle">Hln</span><span className="text-accent">DESIGN</span></div>,
+            desc: <>Donde convergen la elegancia y la simplicidad en un tejido coherente, guiado por los principios fundamentales del Diseño Gráfico y la Comunicación Visual.</>,
             btn_portfolio: 'Explora mi trabajo',
             btn_services: 'Descubre mis servicios'
         },
@@ -81,8 +81,8 @@ const translations = {
     en: {
         nav: { services: 'Services', products: 'Products', portfolio: 'Portfolio', about: 'About Me', contact: 'Contact' },
         hero: {
-            title: <>Design with <br /><span className="text-accent">soul and purpose</span></>,
-            desc: <>Graphic design studio in La Paz, Bolivia. I help <strong>entrepreneurs and brands</strong> build authentic visual identities that truly connect with their audience.</>,
+            title: <div className="hero-title-logo"><span className="text-tittle">Hln</span><span className="text-accent">DESIGN</span></div>,
+            desc: <>Where elegance and simplicity converge into a coherent fabric, guided by the fundamental principles of Graphic Design and Visual Communication.</>,
             btn_portfolio: 'Explore my work',
             btn_services: 'Discover my services'
         },
