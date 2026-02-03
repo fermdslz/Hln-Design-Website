@@ -6,8 +6,8 @@ Este documento contiene el estado de tu despliegue y los pasos recomendados para
 
 - [x] **Dominio y Hosting**: Firebase Hosting configurado correctamente (`hlndesign.web.app`).
 - [x] **Seguridad**: Actualización de React contra vulnerabilidad CVE-2025-55182.
-- [ ] **Open Graph (Redes Sociales)**: Configurar vista previa (imagen y título) para cuando compartas el link por WhatsApp/Instagram.
-- [ ] **Página 404 Personalizada**: Crear `404.html` con branding de Hln Design.
+- [x] **Open Graph (Redes Sociales)**: Configurada la vista previa (imagen, título y descripción) en `index.html`.
+- [x] **Página 404 Personalizada**: Creada en `public/404.html` con branding de Hln Design.
 - [ ] **Optimización de Activos**: Convertir imágenes pesadas (>500KB) a formato WebP o comprimirlas.
 - [ ] **Favicon**: Verificado y funcionando con el logo oficial.
 
