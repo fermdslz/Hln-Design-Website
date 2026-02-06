@@ -20,12 +20,14 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = translations[language];
 
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <div className="App">
+
       <Navbar
         isMenuOpen={isMenuOpen}
         toggleMenu={toggleMenu}
