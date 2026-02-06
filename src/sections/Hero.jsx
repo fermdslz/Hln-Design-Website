@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { socialLinks } from '../data/socialLinks';
 
 function Hero({ t }) {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -73,23 +74,39 @@ function Hero({ t }) {
                         <p className="hero-desc">{t.hero.desc}</p>
                     </motion.div>
 
-                    <motion.div className="hero-btns">
-                        <motion.a
-                            href="#portfolio"
-                            className="btn btn-primary"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            {t.hero.btn_portfolio}
-                        </motion.a>
-                        <motion.a
-                            href="#services"
-                            className="btn btn-outline-glass"
-                            whileHover={{ scale: 1.05, backgroundColor: 'rgba(255,255,255,0.2)' }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            {t.hero.btn_services}
-                        </motion.a>
+                    <motion.div className="hero-btns" style={{ display: 'flex', gap: '25px', justifyContent: 'center' }}>
+                        {socialLinks.map((social, i) => (
+                            <motion.a
+                                key={social.name}
+                                href={social.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label={social.name}
+                                className="social-icon-hero"
+                                initial={{ opacity: 0, scale: 0 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ delay: 0.8 + i * 0.1, type: "spring", stiffness: 200 }}
+                                style={{ color: 'var(--primary-color)' }}
+                            >
+                                {social.name === 'instagram' && (
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                )}
+                                {social.name === 'facebook' && (
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                    </svg>
+                                )}
+                                {social.name === 'tiktok' && (
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                                    </svg>
+                                )}
+                            </motion.a>
+                        ))}
                     </motion.div>
                 </motion.div>
             </div>

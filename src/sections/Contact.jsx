@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { socialLinks } from '../data/socialLinks';
 
 function Contact({ t }) {
     return (
@@ -71,11 +72,7 @@ function Contact({ t }) {
                 alignItems: 'center',
                 marginBottom: '20px'
             }}>
-                {[
-                    { name: 'instagram', url: 'https://instagram.com/hln_design' },
-                    { name: 'facebook', url: 'https://www.facebook.com/HlnDesignBolivia' },
-                    { name: 'tiktok', url: 'https://www.tiktok.com/@hlndesign.bo' }
-                ].map((social, i) => (
+                {socialLinks.map((social, i) => (
                     <motion.a
                         key={social.name}
                         href={social.url}
