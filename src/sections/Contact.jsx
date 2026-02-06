@@ -71,32 +71,36 @@ function Contact({ t }) {
                 alignItems: 'center',
                 marginBottom: '20px'
             }}>
-                {['instagram', 'facebook', 'tiktok'].map((platform, i) => (
+                {[
+                    { name: 'instagram', url: 'https://instagram.com/hln_design' },
+                    { name: 'facebook', url: 'https://www.facebook.com/HlnDesignBolivia' },
+                    { name: 'tiktok', url: 'https://www.tiktok.com/@hlndesign.bo' }
+                ].map((social, i) => (
                     <motion.a
-                        key={platform}
-                        href="#"
+                        key={social.name}
+                        href={social.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label={platform}
+                        aria-label={social.name}
                         className="social-icon"
                         initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.6 + i * 0.1, type: "spring", stiffness: 200 }}
                     >
-                        {platform === 'instagram' && (
+                        {social.name === 'instagram' && (
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                             </svg>
                         )}
-                        {platform === 'facebook' && (
+                        {social.name === 'facebook' && (
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                             </svg>
                         )}
-                        {platform === 'tiktok' && (
+                        {social.name === 'tiktok' && (
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
                             </svg>

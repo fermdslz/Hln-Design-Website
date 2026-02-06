@@ -599,13 +599,40 @@ section {
   background: rgba(255, 255, 255, 0.65);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  padding: 60px;
-  border-radius: 40px;
+
+  padding: clamp(20px, 2vw, 32px);
+  border-radius: clamp(24px, 3vw, 40px);
+
   border: 1px solid rgba(255, 255, 255, 0.8);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+
   text-align: center;
-  max-width: 800px;
-  width: 100%;
+
+  width: clamp(480px, 35vw, 720px);
+  aspect-ratio: 1 / 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Compact content inside glass card */
+.glass-card .hero-logo-img {
+  max-width: 600px;
+  /* Force logo smaller */
+  margin-bottom: 20px;
+}
+
+.glass-card .hero-desc {
+  font-size: 1.1rem;
+  /* Smaller text */
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.glass-card .hero-btns {
+  margin-top: 10px;
 }
 
 .hero-desc {
