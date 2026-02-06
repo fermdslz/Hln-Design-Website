@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+// Components
 function Navbar({
     isMenuOpen,
     toggleMenu,
@@ -9,8 +10,18 @@ function Navbar({
     language,
     setLanguage
 }) {
+    const [scrolled, setScrolled] = React.useState(false);
+
+    React.useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <nav className="navbar">
+        <nav className={`navbar ${scrolled ? 'scrolled' : 'transparent'}`}>
             <div className="animated-logo" style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: '1.0' }} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 <img src="/assets/hln-logo-pink.png" alt="Hln Design" className="nav-logo-img" />
             </div>
