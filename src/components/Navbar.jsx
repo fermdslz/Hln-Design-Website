@@ -12,8 +12,7 @@ function Navbar({
     return (
         <nav className="navbar">
             <div className="animated-logo" style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: '1.0' }} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                <span className="logo-main" style={{ fontFamily: 'var(--header-font)', fontWeight: 'normal', fontSize: '2.6rem', color: 'var(--primary-color)' }}>Hln</span>
-                <span className="logo-sub" style={{ fontFamily: 'var(--body-font)', fontWeight: '600', fontSize: '0.7rem', color: 'var(--text-muted)', letterSpacing: '4px', marginLeft: '10px', textTransform: 'uppercase' }}>DESIGN</span>
+                <img src="/assets/hln-logo-pink.png" alt="Hln Design" className="nav-logo-img" />
             </div>
 
             <button className="menu-toggle" onClick={toggleMenu} aria-label="Toggle Menu">

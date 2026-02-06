@@ -30,7 +30,9 @@ function Hero({ t }) {
                 initial="hidden"
                 animate="visible"
             >
-                <motion.h1 variants={itemVariants}>{t.hero.title}</motion.h1>
+                <motion.h1 variants={itemVariants}>
+                    <img src="/assets/hln-logo-pink.png" alt="Hln Design" className="hero-logo-img" />
+                </motion.h1>
                 <motion.p className="hero-desc" variants={itemVariants}>{t.hero.desc}</motion.p>
                 <motion.div className="hero-btns" variants={itemVariants}>
                     <motion.a

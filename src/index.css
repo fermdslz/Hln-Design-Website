@@ -163,7 +163,7 @@
   /* New Brand Gray */
   --bg-soft: #F9F9F9;
   --accent-font: 'Pacifico', cursive;
-  --header-font: 'Honduro', 'Montserrat', sans-serif;
+  --header-font: 'Poppins', sans-serif;
   --body-font: 'Poppins', sans-serif;
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -205,6 +205,14 @@ ul {
 
 section {
   padding: 80px max(10%, (100% - 1440px) / 2);
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--text-dark);
 }
 
 .btn {
@@ -503,6 +511,24 @@ section {
   margin: 0 2px;
 }
 
+/* Logo Images */
+.nav-logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  transition: var(--transition-smooth);
+}
+
+.hero-logo-img {
+  width: 60%;
+  max-width: 500px;
+  /* Default for laptop */
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 20px;
+}
+
 /* Hero Section Styles */
 .hero {
   min-height: 100vh;
@@ -564,7 +590,7 @@ section {
 }
 
 .hero-img-primary {
-  width: 100%;
+  width: 80%;
   max-width: 500px;
   aspect-ratio: 5/6;
   background: white;
@@ -622,6 +648,11 @@ section {
   .hero-desc {
     font-size: 1.6rem;
     max-width: 700px;
+  }
+
+  .hero-logo-img {
+    max-width: 800px;
+    /* Scale up logo for 2K/4K */
   }
 
   .hero-img-primary {
