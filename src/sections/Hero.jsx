@@ -52,23 +52,25 @@ function Hero({ t }) {
                 </motion.div>
             </motion.div>
             <div className="hero-visual">
-                <motion.div
-                    className="hero-img-primary"
-                    initial={{ x: 100, opacity: 0, rotate: 0 }}
-                    animate={{ x: 0, opacity: 1, rotate: 5 }}
-                    transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
-                >
-                    <img src="/assets/hero-product.png" alt="HLN Design Studio - Custom Products" />
-                </motion.div>
-                <motion.div
-                    className="hero-img-secondary"
-                    initial={{ x: -100, opacity: 0, rotate: 0 }}
-                    animate={{ x: 0, opacity: 1, rotate: -12 }}
-                    transition={{ duration: 1.2, delay: 0.8, ease: "easeOut" }}
-                >
-                    <div className="pink-overlay"></div>
-                    <img src="/assets/uploaded-stickers.png" alt="Custom colorful stickers" />
-                </motion.div>
+                <div className="hero-images-wrapper">
+                    <motion.div
+                        className="hero-img-primary"
+                        initial={{ x: 100, opacity: 0, rotate: 0 }}
+                        animate={{ x: 0, opacity: 1, rotate: 5 }}
+                        transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
+                    >
+                        <img src="/assets/hero-product.png" alt="HLN Design Studio - Custom Products" />
+                    </motion.div>
+                    <motion.div
+                        className="hero-img-secondary"
+                        initial={{ x: -100, opacity: 0, rotate: 0 }}
+                        animate={{ x: 0, opacity: 1, rotate: -12 }}
+                        transition={{ duration: 1.2, delay: 0.8, ease: "easeOut" }}
+                    >
+                        <div className="pink-overlay"></div>
+                        <img src="/assets/uploaded-stickers.png" alt="Custom colorful stickers" />
+                    </motion.div>
+                </div>
             </div>
         </section>
     );
