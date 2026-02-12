@@ -94,7 +94,7 @@ function Portfolio({ t }) {
                                 src={item.img}
                                 alt={item.title}
                                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                                onError={(e) => { e.target.src = 'https://via.placeholder.com/400x300?text=Proyectos+' + item.title }}
+                                onError={(e) => { e.target.src = 'https://placehold.co/400x300?text=Proyectos+' + item.title }}
                             />
                             <motion.div
                                 className="item-overlay"
@@ -185,7 +185,7 @@ function Portfolio({ t }) {
                                 src={selectedImg.img}
                                 alt={selectedImg.title}
                                 style={{ maxWidth: '100%', maxHeight: '80vh', display: 'block' }}
-                                onError={(e) => { e.target.src = 'https://via.placeholder.com/800x600?text=' + selectedImg.title }}
+                                onError={(e) => { e.target.src = 'https://placehold.co/800x600?text=' + selectedImg.title }}
                             />
                             <div style={{ padding: '20px', background: 'white', textAlign: 'center' }}>
                                 <h3 style={{ color: 'var(--text-dark)' }}>{selectedImg.title}</h3>
