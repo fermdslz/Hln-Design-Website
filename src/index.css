@@ -190,7 +190,7 @@ h3,
 h4 {
   font-family: var(--header-font);
   font-weight: 700;
-  color: var(--text-dark);
+  color: var(--primary-color);
 }
 
 a {

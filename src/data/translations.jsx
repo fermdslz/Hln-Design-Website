@@ -5,7 +5,7 @@ const translations = {
         nav: { services: 'Servicios', products: 'Productos', portfolio: 'Portafolio', about: 'Sobre Mí', contact: 'Contacto' },
         hero: {
             title: <div className="hero-title-logo"><span className="text-tittle">Hln</span><span className="text-accent">DESIGN</span></div>,
-            desc: <>Donde convergen la elegancia y la simplicidad en un tejido coherente, guiado por los principios fundamentales del Diseño Gráfico y la Comunicación Visual.</>,
+            desc: <>Bienvenido a Hln Design, soy Helen!<br /><br />Si estás empezando o buscas darle nueva vida a tu identidad visual, este es un buen lugar para comenzar.</>,
             btn_portfolio: 'Explora mi trabajo',
             btn_services: 'Descubre mis servicios'
         },
@@ -23,10 +23,10 @@ const translations = {
             title: 'Productos para Ti',
             subtitle: 'Herramientas y detalles que organizan y embellecen tu día',
             items: [
-                { title: 'Calendarios', icon: '📅', desc: 'Organiza tu año con un diseño que inspira.' },
-                { title: 'Planners', icon: '📒', desc: 'Planifica tus metas y alcanza tus objetivos.' },
-                { title: 'Etiquetas', icon: '🏷️', desc: 'El detalle perfecto para tus productos.' },
-                { title: 'Agendas', icon: '📖', desc: 'Tu compañera ideal para capturar ideas.' }
+                { title: 'Invitaciones', icon: '/assets/icons/Iconos_invitaciones.svg', desc: 'Diseños únicos para tus momentos más especiales.' },
+                { title: 'Planners', icon: '/assets/icons/Iconos_planners.svg', desc: 'Planifica tus metas y alcanza tus objetivos.' },
+                { title: 'Etiquetas', icon: '/assets/icons/Iconos_etiquetas.svg', desc: 'El detalle perfecto para tus productos.' },
+                { title: 'Agendas', icon: '/assets/icons/Iconos_agendas.svg', desc: 'Tu compañera ideal para capturar ideas.' }
             ]
         },
         testimonials: {
@@ -82,7 +82,7 @@ const translations = {
         nav: { services: 'Services', products: 'Products', portfolio: 'Portfolio', about: 'About Me', contact: 'Contact' },
         hero: {
             title: <div className="hero-title-logo"><span className="text-tittle">Hln</span><span className="text-accent">DESIGN</span></div>,
-            desc: <>Where elegance and simplicity converge into a coherent fabric, guided by the fundamental principles of Graphic Design and Visual Communication.</>,
+            desc: <>Welcome to Hln Design. I'm Helen!<br /><br />Whether you're just starting out or looking to breathe new life into your visual identity, this is a great place to begin.</>,
             btn_portfolio: 'Explore my work',
             btn_services: 'Discover my services'
         },
@@ -100,10 +100,10 @@ const translations = {
             title: 'Products for You',
             subtitle: 'Tools and details that organize and Beautify your day',
             items: [
-                { title: 'Calendars', icon: '📅', desc: 'Organize your year with inspiring design.' },
-                { title: 'Planners', icon: '📒', desc: 'Plan your goals and achieve your objectives.' },
-                { title: 'Labels', icon: '🏷️', desc: 'The perfect detail for your products.' },
-                { title: 'Agendas', icon: '📖', desc: 'Your ideal companion for capturing ideas.' }
+                { title: 'Invitations', icon: '/assets/icons/Iconos_invitaciones.svg', desc: 'Unique designs for your most special moments.' },
+                { title: 'Planners', icon: '/assets/icons/Iconos_planners.svg', desc: 'Plan your goals and achieve your objectives.' },
+                { title: 'Labels', icon: '/assets/icons/Iconos_etiquetas.svg', desc: 'The perfect detail for your products.' },
+                { title: 'Agendas', icon: '/assets/icons/Iconos_agendas.svg', desc: 'Your ideal companion for capturing ideas.' }
             ]
         },
         testimonials: {

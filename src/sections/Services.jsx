@@ -64,7 +64,7 @@ function Services({ t }) {
                             <img src={service.img} alt={service.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         </div>
                         <div style={{ padding: '30px' }}>
-                            <h3 style={{ marginBottom: '15px' }}>{service.title}</h3>
+                            <h3 style={{ marginBottom: '15px', color: 'var(--text-dark)' }}>{service.title}</h3>
                             <p style={{ color: 'var(--text-muted)' }}>{service.desc}</p>
                         </div>
                     </motion.div>

@@ -47,8 +47,32 @@ function Products({ t }) {
                         variants={itemVariants}
                         whileHover={{ y: -10, scale: 1.02 }}
                     >
-                        <span className="product-icon">{product.icon}</span>
-                        <h3 style={{ marginBottom: '10px' }}>{product.title}</h3>
+                        <span className="product-icon" style={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            height: '3rem',
+                            marginBottom: '25px',
+                            overflow: 'visible'
+                        }}>
+                            {product.icon.includes('/') ? (
+                                <img
+                                    src={product.icon}
+                                    alt=""
+                                    style={{
+                                        height: '110%',
+                                        width: 'auto',
+                                        maxWidth: '120%',
+                                        objectFit: 'contain',
+                                        transform: 'scale(1.3)',
+                                        transition: 'transform 0.3s ease'
+                                    }}
+                                />
+                            ) : (
+                                <span style={{ fontSize: '3rem' }}>{product.icon}</span>
+                            )}
+                        </span>
+                        <h3 style={{ marginBottom: '10px', color: 'var(--text-dark)' }}>{product.title}</h3>
                         <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>{product.desc}</p>
                     </motion.div>
                 ))}
